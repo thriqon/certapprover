@@ -1,0 +1,12 @@
+kind: CertificateRequest
+apiVersion: cert-manager.io/v1
+metadata:
+  name: selfsigned-test-1
+  namespace: default
+status:
+  conditions:
+    - type: "ApprovedDifferently"
+      status: "True"
+      lastTransitionTime: 2023-11-07T23:00:00Z
+      reason: "Approval"
+      message: "Manually approved"
