@@ -25,4 +25,6 @@ jobs:
       run: go test -v ./.
     - name: Run golangci-lint
       uses: golangci/golangci-lint-action@v3.7.0
-            
+
+    - uses: ko-build/setup-ko@v0.6
+    - run: ko build
